@@ -19,21 +19,16 @@ In a terminal run the following command:
 pip install -r requirements.txt
 ~~~
 
-## Set the CockroachDB connection URL
+## Environment variables
+You'll need to have a value for `COCKROACH_CONNECTION_STRING` - this shouldn't be publically shared I'll give it to you via Discord.
 
-In a terminal set a `DATABASE_URL` environment variable to the connection URL for your CockroachDB cluster.
-
-For example on Mac and Linux:
-~~~ shell
-export DATABASE_URL='<connection URL>'
-~~~
-
-For detailed steps on creating a CockroachDB cluster, see the [tutorial](https://www.cockroachlabs.com/docs/stable/build-a-python-app-with-cockroachdb-psycopg3.html).
 
 ## Run the example
 
 To run the example, in a terminal run the following command:
 
 ~~~ shell
-python3 example.py
+python3 main.py
 ~~~
+
+Then nvaigate to [the interactive api docs](http://127.0.0.1:8000/docs#/default/get_accounts_accounts_get), try running the `GET /accounts` endpoint to see if it worked.
